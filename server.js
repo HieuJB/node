@@ -14,10 +14,9 @@ app.use((req, res, next) => {
 });
 
 app.get('/api/time', (req, res) => {
-    setTimeout(() => {
+   
       const currentTime = new Date().toLocaleString();
       res.send({ time: currentTime });
-    }, 3000); // Trì hoãn 3 giây
   });
 
 // Khởi động server trên cổng 4000
